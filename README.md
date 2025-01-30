@@ -4,6 +4,9 @@
 1. ssh to proxmox server
 1. clone this repo
 1. modify variables at the top of ./proxmox/cloud-init-template-create/ubuntu2404-cloudinit.sh
+    * SSH_AUTH_KEYS_FILE: by default this will use the authorized_keys file on the proxmox server by default. Copy your workstation publish key into that file, or create a new file for them and change the file used in the variable
+    * USER: update to match your username
+    * STORAGE: update to match your storage volume name in proxmox
 1. execute ./proxmox/cloud-init-template-create/ubuntu2404-cloudinit.sh
 
 ## Create the lab machines
