@@ -3,7 +3,7 @@
 VMID=8200
 STORAGE=local-lvm
 USER=dmoe
-SSH_AUTH_KEYS_FILE="~/.ssh/authorized_keys"
+SSH_AUTH_KEYS_FILE=~/.ssh/authorized_keys
 
 set -x
 rm -f noble-server-cloudimg-amd64.img
